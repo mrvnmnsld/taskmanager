@@ -47,4 +47,5 @@ cp .env.example .env
 php artisan key:generate
 # Configure your .env (DB settings, etc.)
 php artisan migrate
+npm run build
 php artisan serve
