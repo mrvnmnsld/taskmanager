@@ -23,19 +23,25 @@ A simple and efficient Task Management system built with Laravel. Supports user-
 
 ## 📌 Endpoints Overview
 
-| Method | Endpoint                  | Description                       |
-|--------|---------------------------|-----------------------------------|
-| GET    | /tasks                    | List tasks with filters           |
-| GET    | /tasks/create             | Create form                       |
-| POST   | /tasks                    | Store task                        |
-| GET    | /tasks/view/{id}          | View task details                 |
-| POST   | /tasks/subtask            | Add a subtask                     |
-| POST   | /tasks/subtask/done       | Toggle subtask completion         |
-| DELETE | /tasks/subtask            | Delete subtask                    |
-| PATCH  | /tasks/update-field       | Update task field (status/publish)|
-| POST   | /tasks/{id}/mark-done     | Mark task done                    |
-| POST   | /tasks/{id}/reopen        | Reopen a completed task           |
-| POST   | /tasks/{id}/archive       | Archive a task                    |
+| Method | Endpoint                        | Description                         |
+|--------|----------------------------------|-------------------------------------|
+| GET    | /tasks                           | List all tasks                      |
+| GET    | /tasks/create                    | Show the task creation form         |
+| POST   | /tasks/store                     | Store a new task                    |
+| GET    | /tasks/{id}/view                 | View task details                   |
+| POST   | /tasks/update/field              | Update task field (status/publish) |
+| POST   | /tasks/{id}/done                 | Mark task as done                   |
+| POST   | /tasks/{id}/reopen               | Reopen a completed task             |
+| POST   | /tasks/{id}/archive              | Archive a task                      |
+| POST   | /tasks/add/subtasks              | Add a subtask                       |
+| POST   | /tasks/done/subtasks             | Toggle subtask completion           |
+| POST   | /tasks/remove/subtasks           | Delete a subtask                    |
+| GET    | /users                           | List users (admin only)             |
+| GET    | /users/{user}/edit               | Edit user (admin only)              |
+| PUT    | /users/{user}                    | Update user (admin only)            |
+| GET    | /profile                         | Edit logged-in user's profile       |
+| PATCH  | /profile                         | Update profile                      |
+| DELETE | /profile                         | Delete account                      |
 
 ## 🔧 Installation
 
